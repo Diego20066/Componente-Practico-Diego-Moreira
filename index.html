@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ley de Coulomb - Triángulo de Cargas</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+
+  <h2>Método del Paralelogramo - Ley de Coulomb</h2>
+  <div><p>Este programa permite ingresar tres cargas eléctricas y las distancias entre ellas para calcular, usando la Ley de Coulomb, las fuerzas que actúan sobre una de las cargas. También muestra un gráfico representando la posición de cada carga y las distancias entre ellas, junto con los resultados numéricos y fórmulas utilizadas</p></div>
+
+  <div class="formulario">
+    <div>
+      q1: <input id="q1" type="number" value="2">
+      <select id="unidad-q1">
+        <option value="1e-6">μC</option>
+        <option value="1e-9">nC</option>
+        <option value="1e-3">mC</option>
+      </select>
+    </div>
+    <div>
+      q2: <input id="q2" type="number" value="-3">
+      <select id="unidad-q2">
+        <option value="1e-6">μC</option>
+        <option value="1e-9">nC</option>
+        <option value="1e-3">mC</option>
+      </select>
+    </div>
+    <div>
+      q3: <input id="q3" type="number" value="-2">
+      <select id="unidad-q3">
+        <option value="1e-6">μC</option>
+        <option value="1e-9">nC</option>
+        <option value="1e-3">mC</option>
+      </select>
+    </div>
+
+    <div>
+      Distancia q1–q2: <input id="d12" type="number" value="10"> m
+    </div>
+    <div>
+      Distancia q1–q3: <input id="d13" type="number" value="8"> m
+    </div>
+    <div>
+      Distancia q2–q3: <input id="d23" type="number" value="7"> m
+    </div>
+
+    <div>
+      <button onclick="calcularCargas()">Calcular</button>
+    </div>
+  </div>
+
+  <canvas id="grafico" width="700" height="500"></canvas>
+  <div id="resultado"></div>
+
+</body>
+</html>
